@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arreglos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <ul class="nav dark">
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">Incio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./arreglos.html">Arreglos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">Contactos</a>
+        </li>
+      </ul>
+      <div class="container">
+        <div class="row">
+          <p>El arreglo [1,2,3,4] se despliega por javascript de la siguiente forma:</p>
+          
+        </div>
+        <div class="resultado"></div>
+        <div></div>
+        <div class="agregarNumero">
+          <input class="form-control" type="text" id="numero" placeholder="Digite un numero">
+          <hr>
+          <button class="btn btn-primary" id="add">Agregar</button>
+          <button class="btn btn-default" id="eliminar">Eliminar</button>
+        </div>
+        <hr/>
+        <p>El objeto libros se desplega de la siguiente forma: </p>
+        <div id="libros" class="libros row"></div>
+        <hr/>
+        <div class="row">
+            <form id="car-form">
+                <div>
+                  <label for="id-field">Placa</label>
+                  <input class="form-control" id="id-field" type="text" name="id" placeholder="Digite la placa del Vehiculo"/>
+                </div>
+                <div>
+                  <label for="brand-field">Marca</label>
+                  <input  class="form-control" id="brand-field" type="text" name="brand" placeholder="Digite la Marca del Vehiculo"/>
+                </div>
+                <div>
+                  <label for="model-field">Modelo</label>
+                  <input  class="form-control" id="model-field" type="text" name="model" placeholder="Digite el modelo del Vehiculo"/>
+                </div>
+                <hr/>
+                <button class="btn btn-primary" id="addCarro">Agregar</button>
+                <button class="btn btn-danger" id="eliminarCarro">Eliminar</button>
+              </form>
+        </div>
+        <hr/>
+        <div class="carros row"></div>
+        <hr/>
+      </div>
+      <script src="./js/manejadorArreglos.js"></script>
+</body>
+</html>
