@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer=""></script>
+    <link rel="stylesheet" href="./css/estilobase.css">
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="#">Tabla con Ajax</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="./acercade.html">Acerca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="tabla2.html">Tabla2</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body">
+                    <h3>Post</h3>
+                    <form>
+                        <div class="form-group">
+                            <input name="userId" placeholder="User Id" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input name="id" type="text" placeholder="ID" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input name="title" placeholder="Title" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input name="body" placeholder="Body" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button id="salvar" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-light">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>User Id</th>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Body</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbdPost"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/tabla.js"></script>
+</body>
+
+</html>
